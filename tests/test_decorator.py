@@ -4,13 +4,13 @@ from allure_commons.types import Severity
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 
+
 @allure.tag('web')
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'ksenya')
 @allure.feature('Задачи в репозитории')
 @allure.story('Шаги с декоратором')
 @allure.link('https://github.com', name='Testing')
-
 def test_decorator_steps():
     open_main_page()
     search_for_repository('eroshenkoam/allure-example')
